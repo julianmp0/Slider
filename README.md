@@ -63,6 +63,11 @@
     }
 
 
+private fun setupBannerSlider(bannerImages: List<BannerEntity>) {
+        dataBinding.bannerSlider1.setInterval(5000)
+        dataBinding.bannerSlider1.setAdapter(MSliderAdapter(bannerImages))
+        dataBinding.bannerSlider1.setOnSlideClickListener(this)
+    }
 
 
 
